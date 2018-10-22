@@ -98,9 +98,8 @@ get gradient () {
   );
 }
 
-  
-  render() {
 
+  render() {
     const Galery = this.Galery(1, 'Default layout | Loop | Parallax | Scale | Opacity | Pagination with tappable dots');
 
     const nameModel = "Rachel"

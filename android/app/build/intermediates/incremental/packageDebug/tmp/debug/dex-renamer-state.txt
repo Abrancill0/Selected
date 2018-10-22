@@ -1,0 +1,4 @@
+#Thu Sep 27 09:44:41 CDT 2018
+base.0=/Users/danthop/Desktop/Proyecto1/Proyecto1/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

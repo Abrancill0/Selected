@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAdditionAnimatedNode.m \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAdditionAnimatedNode.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTValueAnimatedNode.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAnimatedNode.h
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAdditionAnimatedNode.m \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAdditionAnimatedNode.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTValueAnimatedNode.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAnimatedNode.h

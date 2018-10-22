@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/ReactCommon/jschelpers/Unicode.cpp \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/ReactCommon/jschelpers/Unicode.h
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/ReactCommon/jschelpers/Unicode.cpp \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/ReactCommon/jschelpers/Unicode.h

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		nH1MQ4xTYKfyXladbVi1Dl2uhIU=
+		tyqaLcFsBQSOQUeGtSaw2HnzBo8=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -83,7 +83,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hx0haQREJ45911scWVf4fLqLB8w=
+		Hu/hMtyKz0hzfthbxL2IZ+YQJXw=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -111,7 +111,7 @@
 		</data>
 		<key>PlugIns/Proyecto1Tests.xctest.dSYM/Contents/Resources/DWARF/Proyecto1Tests</key>
 		<data>
-		Ck5QHGcjM6GqqQ1wMIudkrZxzhA=
+		7LXTzvmOFsIHpaJX8qACEujWFyA=
 		</data>
 		<key>PlugIns/Proyecto1Tests.xctest/Info.plist</key>
 		<data>
@@ -119,7 +119,7 @@
 		</data>
 		<key>PlugIns/Proyecto1Tests.xctest/Proyecto1Tests</key>
 		<data>
-		XIa6O1Kr4Z8Aowhx0rn/AhbRPuo=
+		xc9/3rjhj1MOXKAEjlXuhK5SKOA=
 		</data>
 		<key>PlugIns/Proyecto1Tests.xctest/_CodeSignature/CodeResources</key>
 		<data>
@@ -140,11 +140,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nH1MQ4xTYKfyXladbVi1Dl2uhIU=
+			tyqaLcFsBQSOQUeGtSaw2HnzBo8=
 			</data>
 			<key>hash2</key>
 			<data>
-			VceL73oYlrhbipdcLWcDj9dlQE1jqvtD/1sjV1rEuxA=
+			xAjq0GXBdYMynuJpeG3c2EpIiKk05KK8V3p+7W98FrE=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -395,11 +395,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ck5QHGcjM6GqqQ1wMIudkrZxzhA=
+			7LXTzvmOFsIHpaJX8qACEujWFyA=
 			</data>
 			<key>hash2</key>
 			<data>
-			dJAgwg2hX2TlFP2DR7sqLEhq7RblsHFVadkBu7BMGZY=
+			8LTMrP8emQEpxIm4KOA2OYZRdQNtaP/vDX+tZ+ly7mQ=
 			</data>
 		</dict>
 		<key>PlugIns/Proyecto1Tests.xctest/Info.plist</key>
@@ -417,11 +417,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XIa6O1Kr4Z8Aowhx0rn/AhbRPuo=
+			xc9/3rjhj1MOXKAEjlXuhK5SKOA=
 			</data>
 			<key>hash2</key>
 			<data>
-			dXHMx6jffGGW2mBhx8Wa7kOf6sTBvMvhiAROaVSB7lw=
+			/7qbySszljPZoYHtXni6rsS3QqmZc1Xa33sc042vHKU=
 			</data>
 		</dict>
 		<key>PlugIns/Proyecto1Tests.xctest/_CodeSignature/CodeResources</key>

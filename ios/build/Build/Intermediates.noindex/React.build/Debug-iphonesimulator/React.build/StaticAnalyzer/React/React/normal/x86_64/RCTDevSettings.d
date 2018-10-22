@@ -1,23 +1,23 @@
 dependencies: \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Modules/RCTDevSettings.mm \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Modules/RCTDevSettings.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Base/RCTBridge.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Base/RCTBridgeModule.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Base/RCTFrameUpdate.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Base/RCTInvalidating.h \
-  /Users/danthop/Documents/GitHub/Selected2/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
-  /Users/danthop/Documents/GitHub/Selected2/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Base/RCTBridge+Private.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Base/RCTEventDispatcher.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Base/RCTLog.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Base/RCTAssert.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Base/RCTUtils.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Profiler/RCTProfile.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/usuario/Documents/GitHub/Selected/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/usuario/Documents/GitHub/Selected/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h

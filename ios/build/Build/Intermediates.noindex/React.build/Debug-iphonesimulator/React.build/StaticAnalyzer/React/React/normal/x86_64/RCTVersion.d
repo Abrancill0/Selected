@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Base/RCTVersion.m \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/Base/RCTVersion.h
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTVersion.m \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTVersion.h

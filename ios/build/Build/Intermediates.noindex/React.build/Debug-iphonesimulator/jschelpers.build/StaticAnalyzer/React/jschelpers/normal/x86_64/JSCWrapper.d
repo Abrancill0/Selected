@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/ReactCommon/jschelpers/JSCWrapper.cpp \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/ReactCommon/jschelpers/JSCWrapper.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/../third-party/glog-0.3.5/src/glog/logging.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/../third-party/glog-0.3.5/src/glog/log_severity.h \
-  /Users/danthop/Documents/GitHub/Selected2/node_modules/react-native/React/../third-party/glog-0.3.5/src/glog/vlog_is_on.h
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/ReactCommon/jschelpers/JSCWrapper.cpp \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/ReactCommon/jschelpers/JSCWrapper.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/third-party/glog-0.3.5/src/glog/logging.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/third-party/glog-0.3.5/src/glog/log_severity.h \
+  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/third-party/glog-0.3.5/src/glog/vlog_is_on.h

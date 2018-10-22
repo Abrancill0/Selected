@@ -261,12 +261,8 @@ export default class talent_manager extends Component {
                   '2018-10-18': {marked: true, dotColor: 'red', activeOpacity: 0},
                 }}
                 calendarWidth={180}
-                calendarHeight={320}
-                
-          />
-
+                calendarHeight={320}/>
           </View>
-          
       </View>
       <Button
         raised

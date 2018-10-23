@@ -17,10 +17,6 @@ export default StyleSheet.create({
         color:'white',
         fontSize:11
       },
-      TitleBigWhite:{
-        color:'white',
-        fontSize:45,
-      },
       Avatar:{
         borderRadius: 2,
         borderWidth: 0.3,

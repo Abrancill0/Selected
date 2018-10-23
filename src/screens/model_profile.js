@@ -98,8 +98,9 @@ get gradient () {
   );
 }
 
-
+  
   render() {
+
     const Galery = this.Galery(1, 'Default layout | Loop | Parallax | Scale | Opacity | Pagination with tappable dots');
 
     const nameModel = "Rachel"
@@ -122,7 +123,7 @@ get gradient () {
     const twitter='@rodri'
 
     return (
-    <View style={styles.container}>
+      <View style={styles.container}>
         <View style={styles.Header}>
             <Avatar
                 large
@@ -263,7 +264,7 @@ get gradient () {
         backgroundColor='black'
         color='white'/>
       </ScrollView>
-    </View>
+      </View>
     );
   }
   renderViewLess(onPress){

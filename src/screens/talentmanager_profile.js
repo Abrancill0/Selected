@@ -51,17 +51,14 @@ export default class talent_manager extends Component {
                 <Text style={styles.littleWhite}>{rating}</Text>
                 <Text style={styles.littleWhite}>Rating</Text>
               </View>
-              </View>
-              <View style={styles.buttonHeader}>
               <Button 
                         rounded 
-                        containerStyle 
                         backgroundColor= 'white' 
                         title='Edit Profile'
-                        textStyle={{color:'black',fontSize:10}}
-                        containerViewStyle={{height:35,width:95}}
+                        textStyle={{color:'black',fontSize:8}}
+                        buttonStyle={{height:32, width:78}}
                 />
-            </View>
+              </View>
           </View>
       </View>
       <ScrollView>
@@ -261,8 +258,12 @@ export default class talent_manager extends Component {
                   '2018-10-18': {marked: true, dotColor: 'red', activeOpacity: 0},
                 }}
                 calendarWidth={180}
-                calendarHeight={320}/>
+                calendarHeight={320}
+                
+          />
+
           </View>
+          
       </View>
       <Button
         raised

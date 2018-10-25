@@ -54,7 +54,8 @@ export default class LoginView extends Component {
                 borderColor: "transparent",
                 borderWidth: 0,
                 borderRadius: 5
-              }}/>    
+              }}
+              onPress={() => this.props.navigation.navigate('App')}/>    
         </View>
       </View>
       )

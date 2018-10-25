@@ -3,6 +3,7 @@ import {View,ListView,ScrollView} from 'react-native';
 import PostCastNowBox from './PostCastNowBox'
 import PostTalentBox from './PostTalentBox.js'
 
+
 export default class Posted extends Component{
     
     constructor() {

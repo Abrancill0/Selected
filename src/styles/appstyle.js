@@ -154,4 +154,8 @@ export default StyleSheet.create({
         flexDirection:'column',
         backgroundColor:'black'
       },
+      TitleBigWhite:{
+        fontSize:45,
+        color:'white'
+      }
 });

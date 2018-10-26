@@ -3,8 +3,11 @@ import {Text, View,TextInput} from 'react-native';
 import { Button } from 'react-native-elements'
 import styles from '../styles/appstyle';
 import styleslocal from '../styles/LoginStyle';
+
 export default class LoginView extends Component {
+
   render() {
+
     return (
       <View style={styles.container}>
       <View style={[styleslocal.boxContainer,styleslocal.box1]}>
@@ -29,6 +32,7 @@ export default class LoginView extends Component {
         <View style={[styleslocal.boxContainer,styleslocal.box3]}>
           <TextInput style={styleslocal.CajaTexto}
               placeholder={'  Name'}
+            
               placeholderTextColor='white'>
             </TextInput>
             <TextInput style={styleslocal.CajaTexto}

@@ -115,37 +115,37 @@ export default class casting_detail extends Component{
             <View style={stylesCast.caja_row1}>
                 <View style={stylesCast.caja_row}>
                     <Icon color='white'name='star'/>
-                    <Text style={styles.white}>{artist_type}</Text>
+                    <Text style={styles.whiteMayus}>{artist_type}</Text>
                 </View>
                 <View style={stylesCast.caja_row}>
                     <Icon color='white'name='user' />
-                    <Text style={styles.white}>{sex}</Text>
+                    <Text style={styles.whiteMayus}>{sex}</Text>
                 </View>
                 <View style={stylesCast.caja_row}>
                     <Icon color='white'name='calendar' />
-                    <Text style={styles.white}>{age}</Text>
+                    <Text style={styles.whiteMayus}>{age}</Text>
                 </View>
                 <View style={stylesCast.caja_row}>
                     <Icon color='white'name='location-arrow' />
-                    <Text style={styles.white}>{origin_location}</Text>
+                    <Text style={styles.whiteMayus}>{origin_location}</Text>
                 </View>
             </View>
             <View style={stylesCast.caja_row1}>
                 <View style={stylesCast.caja_row}>
                     <Icon color='white'name='child'/>
-                    <Text style={styles.white}>{skin}</Text>
+                    <Text style={styles.whiteMayus}>{skin}</Text>
                 </View>
                 <View style={stylesCast.caja_row}>
                     <Icon color='white'name='paint-brush' />
-                    <Text style={styles.white}>{hair}</Text>
+                    <Text style={styles.whiteMayus}>{hair}</Text>
                 </View>
                 <View style={stylesCast.caja_row}>
                     <Icon color='white'name='eye' />
-                    <Text style={styles.white}>{eyes}</Text>
+                    <Text style={styles.whiteMayus}>{eyes} </Text>
                 </View>
                 <View style={stylesCast.caja_row}>
                     <Icon color='white'name='weight' />
-                    <Text style={styles.white}>{weight}</Text>
+                    <Text style={styles.whiteMayus}>{weight}</Text>
                 </View>
             </View>
            </View>

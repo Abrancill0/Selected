@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Text, View, Image} from 'react-native';
+import { Text, View, Image, TouchableHighlight} from 'react-native';
 import {Avatar} from 'react-native-elements'
 import { Button } from 'react-native-elements'
 import styles from '../styles/appstyle';
@@ -8,6 +8,8 @@ import Icon from 'react-native-vector-icons/Feather'
 import Icon2 from 'react-native-vector-icons/FontAwesome'
 import Icon3 from 'react-native-vector-icons/Entypo'
 import Icon4 from 'react-native-vector-icons/Foundation'
+import Posted from './Posted';
+import PostDetail from './PostDetail'
 
 export default class PostCastNowBox extends Component{
     render(){
@@ -49,7 +51,9 @@ export default class PostCastNowBox extends Component{
                         <Icon3 size={10} color='#FA5F5A'name='location-pin'/>
                         <Text style={stylesCastNow.black}>{location}</Text>
                     </View>
-                    <Text style={stylesCastNow.black} onPress = {() => console.log("Works!")}>MORE DETAILS</Text>
+                    <TouchableHighlight onPress={() => this.props.navigation.navigate(PostDetail)}>
+                        <Text style={stylesCastNow.black}>MORE DETAILS</Text>
+                    </TouchableHighlight>
                 </View>
                 <View style = {stylesCastNow.Cast_description} >
                     <View style = {stylesCastNow.RowDescription}>

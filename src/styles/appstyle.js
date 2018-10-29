@@ -157,5 +157,9 @@ export default StyleSheet.create({
       TitleBigWhite:{
         fontSize:45,
         color:'white'
+      },
+      whiteMayus:{
+        color:'white',
+        fontSize:10
       }
 });

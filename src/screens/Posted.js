@@ -2,9 +2,11 @@ import React, {Component} from 'react';
 import {View,ListView,ScrollView} from 'react-native';
 import PostCastNowBox from './PostCastNowBox'
 import PostTalentBox from './PostTalentBox.js'
+import PostDetail from './PostDetail.js'
+import {createStackNavigator,} from 'react-navigation'
 
 
-export default class Posted extends Component{
+class Posted extends Component{
     
     constructor() {
         super();
@@ -57,3 +59,8 @@ export default class Posted extends Component{
         );
     }
 }
+export default createStackNavigator({
+    Posted:Posted,
+    PostDetail:{screen:PostDetail}
+  
+  })

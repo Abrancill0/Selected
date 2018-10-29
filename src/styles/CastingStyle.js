@@ -31,13 +31,16 @@ export default StyleSheet.create({
       },
       caja_row1:{
         flexDirection:'row',
-        padding:5,
-        justifyContent:'flex-start',
+        padding:3,
+        justifyContent:'space-around',
         
       },
       caja_row:{
         padding:5,
         flexDirection:'row',
+        justifyContent:'space-between',
+        width:75
+
       },
     
 })

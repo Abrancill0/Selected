@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Text, View, Image} from 'react-native';
+import { Text, View, Image,ScrollView} from 'react-native';
 import stylesPostDetail from '../styles/StylePostDetail'
 import { Button } from 'react-native-elements';
 import Comment from '../screens/Comment';
@@ -14,9 +14,9 @@ export default class PostDetail extends Component{
         const Owner = 'Elite Model Miami';
         const COMMENTS = 2;
         return(
-            <View style={stylesPostDetail.container}>
+            <ScrollView style={stylesPostDetail.container}>
                 <View style={stylesPostDetail.imagen}>
-                    <Image source={require('../img/elite_cast.jpg')}style={{flex:1, height: undefined, width: undefined}}/>
+                    <Image source={require('../img/elite_cast.jpg')}style={{flex:1, height: undefined, width: undefined, borderRadius:5}}/>
                 </View>
                 <View style={stylesPostDetail.Description}>
                     <Text style={{fontSize:18,}}>{Title_Publication}</Text>
@@ -34,7 +34,7 @@ export default class PostDetail extends Component{
                     <Button style={{height:35, width:35}}  title ='...' fontSize={14} backgroundColor='white'color='black' buttonStyle={{padding:3,borderWidth:1,borderColor:'gray'}}></Button>
                 </View>
                 <Comment/>
-            </View>
+            </ScrollView>
         );
     }
 }

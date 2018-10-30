@@ -6,7 +6,7 @@ import PostDetail from './PostDetail.js'
 import {createStackNavigator,createSwitchNavigator} from 'react-navigation'
 
 
-class Posted extends Component{
+export default class Posted extends Component{
     
     constructor() {
         super();
@@ -21,7 +21,8 @@ class Posted extends Component{
                 project_title:'NY Shoe Factory',
                 likes:'94',
                 coments:'18',
-                description:'Looking for profession all models to shoot a commercial for a shoe factory'
+                description:'Looking for profession all models to shoot a commercial for a shoe factory',
+                
             }
         const talent ={
                 user:'davidgandy',
@@ -59,11 +60,3 @@ class Posted extends Component{
         );
     }
 }
-const DetailStack = createStackNavigator({
-    Posted:Posted,
-    Detail: PostDetail
-  })
-
-export default createSwitchNavigator({
-    PostedStack: DetailStack,
-  })

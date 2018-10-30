@@ -78,6 +78,7 @@ console.warn('',this.props)
                   backgroundColor='black'
                   fontWeight='900'
                   fontSize={14}
+                  onPress={() => this.props.navigation.navigate('SignIn')}
                   />
         </View>
         <View style={[styles.boxContainer,styles.box3]} >
@@ -190,7 +191,9 @@ console.warn('',this.props)
                 borderColor: "transparent",
                 borderWidth: 0,
                 borderRadius: 5
-              }}/>    
+                
+              }}
+              onPress={() => this.props.navigation.navigate('App')}/>    
         </View>
       </ScrollView>
     )

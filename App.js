@@ -17,8 +17,14 @@ import {createSwitchNavigator,createDrawerNavigator, createStackNavigator,create
 
 
 const AuthStackNavigator = createStackNavigator({
-  SignIn:Login,
-  Registro:Register
+  SignIn:{screen:Login,
+  navigationOptions:{
+    header:null}
+},
+  Registro:{screen:Register,
+    navigationOptions:{
+      header:null}
+  },
 
 })
 
@@ -55,6 +61,7 @@ const AppTabNavigator = createBottomTabNavigator({
         />),
         
       }},
+      
   },{
     tabBarOptions: {
       showIcon: true ,
@@ -80,6 +87,7 @@ const AppStackNavigator = createStackNavigator({
       headerStyle: {
         backgroundColor: 'white',
       },
+      
       headerLeft: (
         <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
           <View style={{paddingHorizontal:10}}>
@@ -89,13 +97,20 @@ const AppStackNavigator = createStackNavigator({
       )
     })
   },
+  PostDetail:{
+    screen:PostDetail,
+    navigationOptions:{
+      headerVisible:false,
+      headerStyle: {
+        backgroundColor: 'white',
+      },}
+  }
 })
 
 const AppDrawerNavigator = createDrawerNavigator({
   Home:AppStackNavigator,
   SearchCast: SearchCast,
   CastingDetail: Casting_detail,
-  PostDetail:PostDetail,
   
 })
 

@@ -11,11 +11,9 @@ import Icon4 from 'react-native-vector-icons/Foundation'
 import Posted from './Posted';
 import PostDetail from './PostDetail'
 import { withNavigation } from 'react-navigation';
-
-export default class PostCastNowBox extends Component{
+class PostCastNowBox extends Component{
     render(){
-        const { navigate } = this.props;
-        const {casting_owner,time_ago,type_cast,sex,time,location,project_title,likes,coments,description}=this.props.campos_cast
+        const {casting_owner,time_ago,type_cast,sex,time,location,project_title,likes,coments,description,navigate}=this.props.campos_cast
         return(
             <View style={stylesCastNow.container}>
                 <View style={stylesCastNow.Header}>
@@ -53,7 +51,7 @@ export default class PostCastNowBox extends Component{
                         <Icon3 size={10} color='#FA5F5A'name='location-pin'/>
                         <Text style={stylesCastNow.black}>{location}</Text>
                     </View>
-                    <TouchableHighlight onPress={() => this.props.navigation.navigate('Registro')}>
+                    <TouchableHighlight onPress={() => this.props.navigation.navigate('PostDetail')}>
                         <Text style={stylesCastNow.black}>MORE DETAILS</Text>
                     </TouchableHighlight>
                 </View>
@@ -113,5 +111,7 @@ export default class PostCastNowBox extends Component{
                 </View>
             </View>
         );
+        
     }
 }
+export default withNavigation(PostCastNowBox);

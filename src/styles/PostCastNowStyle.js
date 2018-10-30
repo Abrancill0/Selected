@@ -54,7 +54,7 @@ export default StyleSheet.create({
         flex:1,
     },
     black: {
-        fontSize:10,
+        fontSize:8,
         color:'black'
       },
       black2: {

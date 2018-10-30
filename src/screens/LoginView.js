@@ -3,6 +3,7 @@ import {Text, View,TextInput} from 'react-native';
 import { Button } from 'react-native-elements'
 import styles from '../styles/appstyle';
 import styleslocal from '../styles/LoginStyle';
+import Registro from './Registro'
 
 export default class LoginView extends Component {
 
@@ -28,7 +29,8 @@ export default class LoginView extends Component {
                   color='#c0392b'
                   backgroundColor='black'
                   fontWeight='900'
-                  fontSize={14}/>
+                  fontSize={14}
+                  onPress={() => this.props.navigation.navigate('SignIn')}/>
         </View>
         <View style={[styleslocal.boxContainer,styleslocal.box3]}>
           <TextInput style={styleslocal.CajaTexto}

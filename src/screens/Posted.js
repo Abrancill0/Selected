@@ -3,7 +3,7 @@ import {View,ListView,ScrollView} from 'react-native';
 import PostCastNowBox from './PostCastNowBox'
 import PostTalentBox from './PostTalentBox.js'
 import PostDetail from './PostDetail.js'
-import {createStackNavigator,} from 'react-navigation'
+import {createStackNavigator,createSwitchNavigator} from 'react-navigation'
 
 
 class Posted extends Component{
@@ -59,8 +59,11 @@ class Posted extends Component{
         );
     }
 }
-export default createStackNavigator({
+const DetailStack = createStackNavigator({
     Posted:Posted,
-    PostDetail:{screen:PostDetail}
-  
+    Detail: PostDetail
+  })
+
+export default createSwitchNavigator({
+    PostedStack: DetailStack,
   })

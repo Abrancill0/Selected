@@ -10,9 +10,11 @@ import Icon3 from 'react-native-vector-icons/Entypo'
 import Icon4 from 'react-native-vector-icons/Foundation'
 import Posted from './Posted';
 import PostDetail from './PostDetail'
+import { withNavigation } from 'react-navigation';
 
 export default class PostCastNowBox extends Component{
     render(){
+        const { navigate } = this.props;
         const {casting_owner,time_ago,type_cast,sex,time,location,project_title,likes,coments,description}=this.props.campos_cast
         return(
             <View style={stylesCastNow.container}>
@@ -51,7 +53,7 @@ export default class PostCastNowBox extends Component{
                         <Icon3 size={10} color='#FA5F5A'name='location-pin'/>
                         <Text style={stylesCastNow.black}>{location}</Text>
                     </View>
-                    <TouchableHighlight onPress={() => this.props.navigation.navigate(PostDetail)}>
+                    <TouchableHighlight onPress={() => this.props.navigation.navigate('Registro')}>
                         <Text style={stylesCastNow.black}>MORE DETAILS</Text>
                     </TouchableHighlight>
                 </View>
@@ -71,9 +73,9 @@ export default class PostCastNowBox extends Component{
                                             title ={likes}
                                             color = 'black' 
                                             fontWeight='900'
-                                            buttonStyle={{height:35, width:60}}
+                                            buttonStyle={{height:20, width:45,borderWidth:1,borderColor:'gray',padding:3}}
                                             fontSize={10}
-                                            backgroundColor='#F7F7F7'
+                                            backgroundColor='white'
                                             style={stylesCastNow.boxbutton}
                                         />
                                     <Button
@@ -81,8 +83,8 @@ export default class PostCastNowBox extends Component{
                                             title ={coments}
                                             color = 'black' 
                                             fontWeight='900'
-                                            backgroundColor='#F7F7F7'
-                                            buttonStyle={{height:35, width:60}}
+                                            backgroundColor='white'
+                                            buttonStyle={{height:20, width:45,borderWidth:1,borderColor:'gray',padding:3}}
                                             fontSize={10}
                                             style={stylesCastNow.boxbutton}
                                         />
@@ -90,8 +92,8 @@ export default class PostCastNowBox extends Component{
                                             icon={{name: 'share', type:'foundation' ,color:'black',size:13, }}
                                             color = 'black' 
                                             fontWeight='900'
-                                            backgroundColor='#F7F7F7'
-                                            buttonStyle={{height:35, width:50}}
+                                            backgroundColor='white'
+                                            buttonStyle={{height:20, width:35,padding:3,borderWidth:1,borderColor:'gray'}}
                                             fontSize={10}
                                             style={stylesCastNow.boxbutton}
                                         />
@@ -103,7 +105,7 @@ export default class PostCastNowBox extends Component{
                                     rounded
                                     fontWeight='900'
                                     backgroundColor='#FA5F5A'
-                                    buttonStyle={{height:33, width:90}}
+                                    buttonStyle={{height:20, width:85,padding:3,borderRadius:6}}
                                     fontSize={8}
                                 />
                                 

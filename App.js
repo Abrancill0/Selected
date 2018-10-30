@@ -8,6 +8,7 @@ import Registro from "./src/screens/Registro.js"
 import Experiencia from "./src/screens/ExperienciaAgenciaView.js"
 import Casting_detail from './src/screens/casting_detail.js';
 import Login from './src/screens/LoginView';
+import Register from './src/screens/Registro';
 import Posted from './src/screens/Posted.js'
 import PostDetail from './src/screens/PostDetail.js'
 import SearchCast from './src/screens/Cast_Search.js'
@@ -17,7 +18,7 @@ import {createSwitchNavigator,createDrawerNavigator, createStackNavigator,create
 
 const AuthStackNavigator = createStackNavigator({
   SignIn:Login,
-  SignIn:Login
+  Registro:Register
 
 })
 
@@ -99,7 +100,6 @@ const AppDrawerNavigator = createDrawerNavigator({
 })
 
 export default createSwitchNavigator({
-  AuthLoading: Login,
   Auth:AuthStackNavigator,
   App:AppDrawerNavigator
 

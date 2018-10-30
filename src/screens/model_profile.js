@@ -150,13 +150,15 @@ get gradient () {
                   <Text style={styles.littleWhite}>{rating}</Text>
                   <Text style={styles.littleWhite}>Rating</Text>
                 </View>
-                <Button 
-                        rounded 
-                        backgroundColor= 'white' 
-                        title='Edit Profile'
-                        textStyle={{color:'black',fontSize:8}}
-                        buttonStyle={{height:32, width:78}}
-                />
+                <View style={{paddingTop:5,paddingLeft:0}}>
+                    <Button 
+                            rounded 
+                            backgroundColor= 'white' 
+                            title='Edit Profile'
+                            textStyle={{color:'black',fontSize:8}}
+                            buttonStyle={{height:25, width:80,padding:0,flexWrap:'nowrap'}}
+                    />
+                </View>
                 </View>
               
             </View>

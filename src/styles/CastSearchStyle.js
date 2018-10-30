@@ -208,5 +208,10 @@ export default StyleSheet.create({
         justifyContent: 'center',
         alignItems:'center'
     },
+    Touchabling:{
+        flex:1,
+        width: undefined, 
+        height: undefined,
+    }
 
 })

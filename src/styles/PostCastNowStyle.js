@@ -38,7 +38,7 @@ export default StyleSheet.create({
         
     },
     Row2:{
-        padding:3,
+        padding:5,
         flexDirection:'row',
         marginTop:10,
         justifyContent:'space-between',
@@ -75,15 +75,14 @@ export default StyleSheet.create({
     buttons1:{
         flexDirection:'flex-start',
         flexDirection:'row',
-        justifyContent:'space-between',
-        flex:11
+        flex:.7,
     },
     boxbutton:{
     },
     buttons:{
         flexDirection:'row',
-        justifyContent:'space-between',
-        flex:5
+        justifyContent:'flex-end',
+        flex:.3,
     },
 
 

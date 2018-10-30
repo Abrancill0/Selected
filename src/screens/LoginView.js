@@ -21,7 +21,8 @@ export default class LoginView extends Component {
                   color='#ecf0f1'
                   backgroundColor='black'
                   fontWeight='600'
-                  fontSize={14} />
+                  fontSize={14} 
+                  onPress={() => this.props.navigation.navigate('Registro')}/>
           <Button style={[styleslocal.boton,styleslocal.botonActivo]}
                   title="Login"
                   color='#c0392b'

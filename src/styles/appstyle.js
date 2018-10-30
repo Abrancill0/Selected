@@ -9,7 +9,7 @@ export const colors = {
 
 export default StyleSheet.create({
     container: {
-        paddingTop:20,
+        paddingTop:10,
         flex: 1,
         backgroundColor: 'black',
       },
@@ -23,10 +23,9 @@ export default StyleSheet.create({
         borderColor:'#d6d7da'
       },
       Header: {
-        marginTop:30,
         marginHorizontal:30,
         flexDirection: 'row',
-        height:130, 
+        paddingBottom:10
         
       },
       NameContacReviewRating:{

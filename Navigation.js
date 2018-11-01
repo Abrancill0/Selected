@@ -16,6 +16,8 @@ import Chat from './src/screens/Chat.js';
 import VerificarCuenta from './src/screens/VerificarCuenta.js';
 import CambiarIdioma from './src/screens/CambiarIdioma';
 import {createSwitchNavigator,createDrawerNavigator, createStackNavigator,createBottomTabNavigator,createTopTabNavigator} from 'react-navigation'
+import Rating from './src/screens/Rating';
+
 
 
 
@@ -106,6 +108,10 @@ const AppStackNavigator = createStackNavigator({
       headerVisible:false,
       headerStyle: {
         backgroundColor: 'white',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle : {
+        color: 'white',
       },}
   },
   Verificar_Cuenta:VerificarCuenta,
@@ -113,10 +119,17 @@ const AppStackNavigator = createStackNavigator({
 })
 
 const AppDrawerNavigator = createDrawerNavigator({
-  Home:AppStackNavigator,
-  SearchCast: SearchCast,
-  'Verificar Cuenta':VerificarCuenta,
-  'Cambiar Idioma':CambiarIdioma
+    Home:AppStackNavigator,
+    'Details Rating': Rating,
+    'Verificar Cuenta':VerificarCuenta,
+    'Cambiar Idioma':CambiarIdioma,
+},{
+  navigationOptions:{
+  header:true,
+  headerStyle : {
+    backgroundColor: 'black',
+  }}
+  
   
 })
 

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, View,Text,TextInput,ScrollView} from 'react-native';
 import {Button,CheckBox} from 'react-native-elements'
 import RNPickerSelect from 'react-native-picker-select';
+import AwesomeAlert from 'react-native-awesome-alerts';
 //import { Actions } from 'react-native-router-flux'; // New code
 
 export default class Registro extends Component {
@@ -11,7 +12,7 @@ export default class Registro extends Component {
     this.inputRefs = {};
 
     this.state = {
-        favColor: undefined,
+        TypeUser: undefined,
         items: [
             {
                 label: 'Guest',
@@ -35,7 +36,7 @@ componentDidMount() {
     // has the abililty to both set the initial value and also update it
     setTimeout(() => {
         this.setState({
-            favColor: 'Guest',
+            TypeUser: 'Guest',
         });
       
     }, 1000);
@@ -45,15 +46,6 @@ componentDidMount() {
 _onPressButton() {
   
 console.warn('',this.props)
-
-//if (this.state.items[0].value == 'Talent')
-//{
-//  Actions.ExperienciaTalento();
-//}
-//else if (this.state.items[0].value=='Agency')
-//{
-//  Actions.ExperienciaAgencia();
-//}
 }
 
 
@@ -93,20 +85,8 @@ console.warn('',this.props)
                     items={this.state.items}
                     onValueChange={(value) => {
                         this.setState({
-                            favColor: value,
+                            TypeUser: value,
                         });
-                        
-
-//if (this.state.favColor == 'Talent')
-//{
-//  Actions.ExperienciaAgencia();
-//}
-//else if (this.state.favColor=='Agency')
-//{
-//  Actions.ExperienciaTalento();
-  
-//}
-
                     }}
                     onUpArrow={() => {
                         this.inputRefs.name.focus();
@@ -115,7 +95,7 @@ console.warn('',this.props)
                         this.inputRefs.picker2.togglePicker();
                     }}
                     style={{ ...pickerSelectStyles }}
-                    value={this.state.favColor}
+                    value={this.state.TypeUser}
                     ref={(el) => {
                         this.inputRefs.picker = el;
                     }}
@@ -193,7 +173,22 @@ console.warn('',this.props)
                 borderRadius: 5
                 
               }}
-              onPress={() => this.props.navigation.navigate('App')}/>    
+              onPress={() => {
+              const value = this.state.TypeUser;
+                if (value=='Guest')
+                {
+                  return this.props.navigation.navigate('App')
+                }
+                else if (value=='Talent')
+                {
+                  return this.props.navigation.navigate('RegisterTalent1')
+                }
+                else if (value=='Agency')
+                {
+                  return this.props.navigation.navigate('RegisterAgency')
+                }
+              }}
+              />    
         </View>
       </ScrollView>
     )

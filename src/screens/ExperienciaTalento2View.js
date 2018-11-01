@@ -67,7 +67,9 @@ export default class ExperienciaTalento2View extends Component {
                 borderColor: "gray",
                 borderWidth: 1,
                 borderRadius: 5
-              }}/>  
+              }}
+              onPress={()=>this.props.navigation.navigate('App')}/>  
+              
        </View>
     
       </ScrollView>

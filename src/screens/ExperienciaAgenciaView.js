@@ -51,7 +51,8 @@ export default class ExperienciaAgenciaView extends Component {
         <View style={[styles.boxContainer,styles.box5]}>  
         <Button title='Next' style={styles.next}
             fontSize= {23} fontWeight= '700'
-            backgroundColor='#e74c3c' />        
+            backgroundColor='#e74c3c' 
+            onPress={()=>this.props.navigation.navigate('App')}/>        
         </View>
       </View>
     )

@@ -13,7 +13,7 @@ import PostDetail from './PostDetail'
 import { withNavigation } from 'react-navigation';
 class PostCastNowBox extends Component{
     render(){
-        const {casting_owner,time_ago,type_cast,sex,time,location,project_title,likes,coments,description,navigate}=this.props.campos_cast
+        const {casting_owner,time_ago,type_cast,sex,time,location,project_title,likes,coments,description}=this.props.campos_cast
         return(
             <View style={stylesCastNow.container}>
                 <View style={stylesCastNow.Header}>

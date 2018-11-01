@@ -115,7 +115,7 @@ export default class Cast_Search extends Component{
                             </ImageBackground>
                         </View>
                         <View style={SearchCastStyle.fila}>
-                            <TouchableOpacity activeOpacity={.8} style={SearchCastStyle.Touchabling}>
+                            <TouchableOpacity activeOpacity={.8} style={{flex:1}}>
                                 <View style={SearchCastStyle.contenedorLeftPantalla2}>
                                         <ImageBackground
                                             style={{flex:1,width: undefined, height: undefined}}
@@ -132,7 +132,7 @@ export default class Cast_Search extends Component{
                                 </View>
                             </TouchableOpacity>
                             <View style={SearchCastStyle.contenedorColumna}>
-                                <TouchableOpacity activeOpacity={.8} style={SearchCastStyle.Touchabling}>
+                                <TouchableOpacity activeOpacity={.8} style={{flex:1}}>
                                     <View style={SearchCastStyle.contenedorRightPantalla2}>
                                         <ImageBackground
                                             style={{flex:1,width: undefined, height: undefined}}
@@ -148,7 +148,7 @@ export default class Cast_Search extends Component{
                                         </ImageBackground>
                                     </View>
                                 </TouchableOpacity>
-                                <TouchableOpacity activeOpacity={.8} style={SearchCastStyle.Touchabling}>
+                                <TouchableOpacity activeOpacity={.8} style={{flex:1}}>
                                     <View style={SearchCastStyle.contenedorRightPantalla2}>
                                         <ImageBackground
                                             style={{flex:1,width: undefined, height: undefined}}
@@ -164,11 +164,6 @@ export default class Cast_Search extends Component{
                                         </ImageBackground>
                                     </View>
                                 </TouchableOpacity>
-                            </View>
-                            <View style={SearchCastStyle.starfive}>
-                                    <TriangleUp style={SearchCastStyle.starfiveTop} />
-                                    <View style={SearchCastStyle.starfiveBefore} />
-                                    <View style={SearchCastStyle.starfiveAfter} />
                             </View>
                         
                         </View>

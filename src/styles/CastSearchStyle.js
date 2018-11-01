@@ -12,7 +12,6 @@ export default StyleSheet.create({
     },
     contenedorColumna:{
         width:170,
-        flexDirection:'column'
     },
     contenedorLeftPantalla1:{
         flex:.5,

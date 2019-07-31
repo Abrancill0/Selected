@@ -1,68 +1,39 @@
 import React, {Component} from 'react';
-import {Text, View,TextInput} from 'react-native';
+import {Text, View,TextInput,ScreenHeight,ImageBackground,Image,Dimensions} from 'react-native';
 import { Button } from 'react-native-elements'
+import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 import styles from '../styles/appstyle';
 import styleslocal from '../styles/LoginStyle';
 
 export default class LoginView extends Component {
 
   render() {
+    let ScreenHeight = Dimensions.get("window").height;
+
 
     return (
-      <View style={styles.container}>
-      <View style={[styleslocal.boxContainer,styleslocal.box1]}>
-          <Text style={styles.TitleBigWhite}>
-            Selected
-          </Text>
-      </View>
-      <View style={[styleslocal.boxContainer,styleslocal.box2]}>
-          <Button style={[styleslocal.botonDesactivo,styleslocal.boton]}
-                  title="Register"
-                  color='#ecf0f1'
-                  backgroundColor='black'
-                  fontWeight='600'
-                  fontSize={14} 
-                  onPress={() => this.props.navigation.navigate('Registro')}/>
-          <Button style={[styleslocal.boton,styleslocal.botonActivo]}
-                  title="Login"
-                  color='#c0392b'
-                  backgroundColor='black'
-                  fontWeight='900'
-                  fontSize={14}
-                  onPress={() => this.props.navigation.navigate('SignIn')}/>
-        </View>
-        <View style={[styleslocal.boxContainer,styleslocal.box3]}>
-          <TextInput style={styleslocal.CajaTexto}
-              placeholder={'  Name'}
-            
-              placeholderTextColor='white'>
-            </TextInput>
-            <TextInput style={styleslocal.CajaTexto}
-              placeholder={'  UserName'}
-              placeholderTextColor='white'>
-            </TextInput>
-        </View>
-        <View style={[styleslocal.boxContainer,styleslocal.box4]}>
-        <Text style={styles.littleWhite}>
-            Forgot your password? Reset
-          </Text>
-        </View>
-        <View style={[styleslocal.boxContainer,styleslocal.box5]}>  
-        
-          <Button title='Next'
-              fontSize= {20} fontWeight= '700'
-              onPress={this._onPressButton}
-              loadingProps={{ size: "large", color: "#ecf0f1" }}
-              buttonStyle={{
-                backgroundColor: "#e74c3c",
-                width: 300,
-                height: 45,
-                borderColor: "transparent",
-                borderWidth: 0,
-                borderRadius: 5
-              }}
-              onPress={() => this.props.navigation.navigate('App')}/>    
-        </View>
+      <View style={{height: ScreenHeight,backgroundColor:'black'}}>
+
+          <ImageBackground source={require('../img/7420.jpg')} style={{ flex: 1, width: undefined, height: undefined}}>
+          <View style={{flex:1,padding:30}}>
+              <View style={{flex:.8}}>
+                  <Image source={require('../img/logo_selected_blanco.png')}style={{flex:1, height: undefined, width: undefined}} resizeMode="contain"/>
+              </View>
+              <View style={{flex:5,justifyContent:'center',alignItems:'center'}}>
+
+              </View>
+              <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
+                <View style={{margin:5,flex:1,flexDirection:'row'}}>
+                  <Button title='Login' 
+                      backgroundColor='#F64648' 
+                      containerViewStyle={{flex:1,width:undefined,height:undefined}}
+                      onPress={() => this.props.navigation.navigate('App')}
+                    />
+                </View>
+              </View>
+          </View>
+        </ImageBackground>
+
       </View>
       )
   }

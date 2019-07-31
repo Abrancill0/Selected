@@ -42,7 +42,7 @@ export default class Posted extends Component{
 
     render(){
         return(
-            <View style={AppStyle.container}>
+            <View style={{paddingTop:10,flex: 1,backgroundColor: 'black',}}>
                  <ListView
                 dataSource={this.state.dataSource}
                 renderRow={(cast,i)=> {

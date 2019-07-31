@@ -19,22 +19,35 @@ import NewPost from './src/screens/NewPostScreen.js'
 import PostDetail from './src/screens/PostDetailScreen.js'
 import CommentScreen from './src/screens/CommentsScreen.js'
 import SearchCast from './src/screens/SearchCastScreen.js'
-import Chat from './src/screens/ChatScreen.js';
+import ChatScreen from './src/screens/ChatScreen.js';
 import CambiarIdioma from './src/screens/CambiarIdiomaScreen';
-import {createSwitchNavigator,createDrawerNavigator, createStackNavigator,createBottomTabNavigator,createTopTabNavigator} from 'react-navigation'
+import PresentationScreen from './src/screens/PresentationScreen';
+import {createSwitchNavigator,createDrawerNavigator,createAppContainer, createStackNavigator,createBottomTabNavigator,createTopTabNavigator} from 'react-navigation'
 import { Drawer } from 'react-native-router-flux';
 import colors from './src/styles/colors.js';
 
 
 
 const AuthStackNavigator = createStackNavigator({
-  SignIn:{screen:Login,
-  navigationOptions:{
-    header:null}
-},
-  Registro:{screen:Register,
+  PresentationScreen:{screen:PresentationScreen,
     navigationOptions:{
       header:null}
+  },
+  SignIn:{screen:Login,
+  navigationOptions:{
+    header:null,
+      headerStyle: {
+        backgroundColor: 'black',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle : {
+        color: 'white',
+      },}
+},
+  Registro:{screen:Register,
+    header:null,
+    navigationOptions:{
+      headerVisible:true}
   },
 
 })
@@ -85,7 +98,7 @@ const AppTabNavigator = createBottomTabNavigator(
         </Icon3>
       </View>)
   })},
-    Chat:{screen:Chat,navigationOptions: () => ({
+    ChatScreen:{screen:ChatScreen,navigationOptions: () => ({
       tabBarIcon: ({tintColor}) => (
         <View style={{flexDirection:'column',width:50}}>
           <Icon4
@@ -163,7 +176,14 @@ const AppDrawerNavigator = createDrawerNavigator({
 }
 )
 
-export default createSwitchNavigator({
+
+const SwitchApp  = createSwitchNavigator({
   Auth:AuthStackNavigator,
   App:AppDrawerNavigator,
 })
+
+const ContainerApp = createAppContainer(SwitchApp);
+
+
+
+export default ContainerApp;

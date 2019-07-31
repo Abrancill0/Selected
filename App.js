@@ -1,22 +1,29 @@
 import React, {Component} from 'react';
-import {TouchableOpacity,View} from 'react-native';
+import {TouchableOpacity,View,Text,SafeAreaView} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons'
-import Guest from './src/screens/guest_profile.js';
-import Model_profile from './src/screens/model_profile.js';
-import Manager_profile from './src/screens/talentmanager_profile.js';
-import Registro from "./src/screens/Registro.js"
+import Icon2 from 'react-native-vector-icons/MaterialCommunityIcons'
+import Icon3 from 'react-native-vector-icons/FontAwesome'
+import Icon4 from 'react-native-vector-icons/Feather'
+
+
+import Guest from './src/screens/GuestProfileScreen.js';
+import Model_profile from './src/screens/ModelProfileScreen.js';
+import Manager_profile from './src/screens/TalentManagerProfileScreen.js';
+import Registro from "./src/screens/RegistroScreen.js"
 import Experiencia from "./src/screens/ExperienciaAgenciaView.js"
-import Casting_detail from './src/screens/casting_detail.js';
-import Login from './src/screens/LoginView';
-import Register from './src/screens/Registro';
-import Posted from './src/screens/Posted.js'
-import PostDetail from './src/screens/PostDetail.js'
-import SearchCast from './src/screens/Cast_Search.js'
-import Chat from './src/screens/Chat.js';
-import VerificarCuenta from './src/screens/VerificarCuenta.js';
-import CambiarIdioma from './src/screens/CambiarIdioma';
+import Casting_detail from './src/screens/CastingDetailScreen.js';
+import Login from './src/screens/LoginViewScreen';
+import Register from './src/screens/RegistroScreen';
+import Home from './src/screens/HomeScreen.js';
+import NewPost from './src/screens/NewPostScreen.js'
+import PostDetail from './src/screens/PostDetailScreen.js'
+import CommentScreen from './src/screens/CommentsScreen.js'
+import SearchCast from './src/screens/SearchCastScreen.js'
+import Chat from './src/screens/ChatScreen.js';
+import CambiarIdioma from './src/screens/CambiarIdiomaScreen';
 import {createSwitchNavigator,createDrawerNavigator, createStackNavigator,createBottomTabNavigator,createTopTabNavigator} from 'react-navigation'
-import Rating from './src/screens/Rating'
+import { Drawer } from 'react-native-router-flux';
+import colors from './src/styles/colors.js';
 
 
 
@@ -32,108 +39,131 @@ const AuthStackNavigator = createStackNavigator({
 
 })
 
-const AppTabNavigator = createBottomTabNavigator({
-  Post: {screen:Posted,
-  navigatioOptions:{
-    tapBarLabel:Posted,
-    tabBarIcon: ({tintColor}) => (
-      <Icon
-          name="google"
-          color={tintColor}
-          size={24}
-      />)
-  }},
-  Chat: {screen:Chat},
-  SearchCast: {screen:SearchCast,
-    navigatioOptions:{
-      tapBarLabel:SearchCast,
+const AppTabNavigator = createBottomTabNavigator(
+  {
+    Home:{screen:Home,navigationOptions: () => ({
       tabBarIcon: ({tintColor}) => (
-        <Icon
-            name="google"
-            color={tintColor}
-            size={24}
-        />)
-    }},
-    Profile: {screen:Model_profile,
-      navigatioOptions:{
-        tapBarLabel:Model_profile,
-        tabBarIcon: ({tintColor}) => (
-          <Icon
-              name="google"
+        <View style={{flexDirection:'column',width:50}}>
+          <Icon2
+              name="home-currency-usd"
               color={tintColor}
               size={24}
-        />),
-        
-      }},
-      
-  },{
-    tabBarOptions: {
-      showIcon: true ,
-      activeTintColor: 'white',
-      labelStyle: {
-        fontSize: 12,
-      },
-      activeBackgroundColor:'#FA5F5A',
-      style: {
-        backgroundColor: 'black',
-        activeBackgroundColor:'red'
-      }},
-      showIcon:true,
-      showLabel:true
-    })
+              style={{alignSelf:'center',shadowOpacity:.1}}>
+          </Icon2>
+         </View>)
+    })},
+    SearchCast:{screen:SearchCast,navigationOptions: () => ({
+      tabBarIcon: ({tintColor}) => (
+        <View style={{flexDirection:'column',width:50}}>
+          <Icon
+              name="md-search"
+              color={tintColor}
+              size={24}
+              style={{alignSelf:'center',shadowOpacity:.1}}>
+          </Icon>
+         </View>)
+  })},
+  NewPost:{screen:NewPost,navigationOptions: () => ({
+    tabBarIcon: ({tintColor}) => (
+      <View style={{flexDirection:'column',width:50}}>
+        <Icon3
+            name="plus-square-o"
+            color={tintColor}
+            size={24}
+            style={{alignSelf:'center',shadowOpacity:.1}}>
+        </Icon3>
+       </View>)
+})},
+  Model_profile:{screen:Model_profile,navigationOptions: () => ({
+    tabBarIcon: ({tintColor}) => (
+      <View style={{flexDirection:'column',width:50}}>
+        <Icon3
+            name="user-circle"
+            color={tintColor}
+            size={24}
+            style={{alignSelf:'center',shadowOpacity:.1}}>
+        </Icon3>
+      </View>)
+  })},
+    Chat:{screen:Chat,navigationOptions: () => ({
+      tabBarIcon: ({tintColor}) => (
+        <View style={{flexDirection:'column',width:50}}>
+          <Icon4
+              name="message-circle"
+              color={tintColor}
+              size={24}
+              style={{alignSelf:'center',shadowOpacity:.1}}>
+          </Icon4>
+         </View>)
+  })}},
+    {tabBarOptions:{showLabel:false,activeBackgroundColor:'black',inactiveTintColor: 'gray',activeTintColor:'#FA5F5A',style:{backgroundColor:'#000'}}},
+    {initialRouteName:'Home'},
+    )
+    
 
 const AppStackNavigator = createStackNavigator({
   AppTabNavigator:{
     screen:AppTabNavigator,
     navigationOptions:({navigation}) => ({
-      title:'Selected',
       headerTintColor: '#FA5F5A',
       headerStyle: {
-        backgroundColor: 'white',
+        backgroundColor: 'black',
       },
       
       headerLeft: (
         <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
           <View style={{paddingHorizontal:10}}>
-              <Icon name='md-menu' size={24} color='black'/>
+              <Icon name='md-menu' size={24} color='white'/>
           </View>
         </TouchableOpacity>
       )
     })
   },
+  CommentScreen:{
+    screen:CommentScreen,
+    navigationOptions:{
+      headerVisible:true,
+      title:'Comments',
+      headerStyle: {
+        backgroundColor: 'black',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle : {
+        color: 'white',
+      },
+    },
+  },
   PostDetail:{
     screen:PostDetail,
     navigationOptions:{
-      headerVisible:false,
+      headerVisible:true,
       headerStyle: {
-        backgroundColor: 'white',
+        backgroundColor: 'black',
       },
       headerTintColor: '#fff',
       headerTitleStyle : {
         color: 'white',
       },}
   },
-  Verificar_Cuenta:VerificarCuenta,
   Cambiar_Idioma:CambiarIdioma,
 })
 
 const AppDrawerNavigator = createDrawerNavigator({
     Home:AppStackNavigator,
-    'Details Rating': Rating,
-    'Verificar Cuenta':VerificarCuenta,
-    'Cambiar Idioma':CambiarIdioma,
+    'Language':CambiarIdioma,
 },{
-  navigationOptions:{
-  header:true,
-  headerStyle : {
-    backgroundColor: 'black',
-  }}
-  
-  
-})
+  drawerBackgroundColor:'#000',
+  contentComponent:() => (
+    <View style={{flex:1}}>
+        <SafeAreaView forceInset={{ top: 'always', horizontal: 'never' }}>
+          <Text style={colors.white}>Home </Text>
+        </SafeAreaView>
+    </View>
+  ),
+}
+)
 
 export default createSwitchNavigator({
   Auth:AuthStackNavigator,
   App:AppDrawerNavigator,
-
 })

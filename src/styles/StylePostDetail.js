@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     container:{
-        backgroundColor:'white'
+        backgroundColor:'black'
       },
     Columna:{
         flex:1,

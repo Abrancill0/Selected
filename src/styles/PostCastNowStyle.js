@@ -2,11 +2,11 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
 
     container:{
-        backgroundColor: 'white',
+        backgroundColor: 'black',
     },
     Header: {
         marginTop:30,
-        marginHorizontal:20,
+        paddingHorizontal:15,
         flexDirection: 'row',
       },
     TypeOwner:{
@@ -14,8 +14,8 @@ export default StyleSheet.create({
         flexDirection:'column',
         padding:5,
       },
-    BlackTitle: {
-        color:'black',
+    WhiteTitle: {
+        color:'white',
         fontSize: 25
       },
     RowCastingOwner:{
@@ -48,10 +48,10 @@ export default StyleSheet.create({
         flexWrap: 'wrap',
     },
     caracteristicas:{
-        justifyContent:'space-between',
-        flexDirection:'row',
-        paddingHorizontal:10,
-        flex:1,
+        marginRight:10,
+        color:'gray',
+        fontSize:16,
+        fontWeight:'600',
     },
     black: {
         fontSize:8,
@@ -62,28 +62,21 @@ export default StyleSheet.create({
         color:'black'
       },
       white: {
-        fontSize:12,
-        color:'white'
+        fontWeight:'600',
+        fontSize:16,
+        color:'white',
+        textDecorationLine:'underline'
       },
     Cast_description: {
         marginHorizontal:10,
         
     },
     gray:{
-        color:'gray'
-    },
-    buttons1:{
-        flexDirection:'flex-start',
-        flexDirection:'row',
-        flex:.7,
-    },
-    boxbutton:{
-    },
-    buttons:{
-        flexDirection:'row',
-        justifyContent:'flex-end',
-        flex:.3,
-    },
+        color:'gray',
+        fontWeight:'600',
+        fontSize:16,
+
+    }
 
 
 })

@@ -1,22 +1,22 @@
 dependencies: \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/Surface/RCTSurfaceRootShadowView.m \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/Surface/RCTSurfaceRootShadowView.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Views/RCTShadowView.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Views/RCTComponent.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Views/RCTLayout.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/usuario/Documents/GitHub/Selected/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
-  /Users/usuario/Documents/GitHub/Selected/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
-  /Users/usuario/Documents/GitHub/Selected/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTRootView.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTBridge.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTBridgeModule.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTFrameUpdate.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTInvalidating.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/Surface/RCTSurfaceRootShadowViewDelegate.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Modules/RCTI18nUtil.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Views/RCTShadowView+Layout.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Modules/RCTUIManagerUtils.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTAssert.h
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Base/Surface/RCTSurfaceRootShadowView.m \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Base/Surface/RCTSurfaceRootShadowView.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Views/RCTShadowView.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Views/RCTComponent.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Views/RCTLayout.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/jl/Documents/GitHub/Selected/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/jl/Documents/GitHub/Selected/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/jl/Documents/GitHub/Selected/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTRootView.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Base/Surface/RCTSurfaceRootShadowViewDelegate.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Modules/RCTI18nUtil.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Views/RCTShadowView+Layout.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Modules/RCTUIManagerUtils.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/React/Base/RCTAssert.h

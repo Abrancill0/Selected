@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/third-party/folly-2016.10.31.00/folly/detail/MallocImpl.cpp \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/third-party/folly-2016.10.31.00/folly/detail/Malloc.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/third-party/folly-2016.10.31.00/folly/Portability.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/third-party/folly-2016.10.31.00/folly/portability/Config.h \
-  /Users/usuario/Documents/GitHub/Selected/node_modules/react-native/third-party/folly-2016.10.31.00/folly/CPortability.h
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/third-party/folly-2016.10.31.00/folly/detail/MallocImpl.cpp \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/third-party/folly-2016.10.31.00/folly/detail/Malloc.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/third-party/folly-2016.10.31.00/folly/Portability.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/third-party/folly-2016.10.31.00/folly/portability/Config.h \
+  /Users/jl/Documents/GitHub/Selected/node_modules/react-native/third-party/folly-2016.10.31.00/folly/CPortability.h
